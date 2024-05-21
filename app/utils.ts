@@ -13,6 +13,8 @@ export function currentURL(pathname: string): URL {
 }
 
 export function vercelURL() {
+  return "https://pizza-people-mint-frame.vercel.app";
+
   return process.env.VERCEL_URL
     ? `https://${process.env.VERCEL_URL}`
     : undefined;
