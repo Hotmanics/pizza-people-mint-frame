@@ -11,13 +11,13 @@ const handleRequest = frames(async (ctx) => {
   let result = await waitForTransaction(
     ctx,
     theHash,
-    `./weedies-mint/frames420/`
+    `./weedies-mint/frames75/`
   );
   if (result) return result as any;
 
   const jsons = await getNftMetadatas(
     Number(ctx.state.startMintCount) + 1,
-    Number(ctx.state.startMintCount) + 20,
+    Number(ctx.state.startMintCount) + 75,
     true
   );
 
@@ -29,11 +29,7 @@ const handleRequest = frames(async (ctx) => {
     );
   });
 
-  return getMintPageRoute(
-    theHash,
-    jsonComponents,
-    "...and 400 more unique weedies!"
-  );
+  return getMintPageRoute(theHash, jsonComponents, "...and many more!");
 });
 
 export const GET = handleRequest;

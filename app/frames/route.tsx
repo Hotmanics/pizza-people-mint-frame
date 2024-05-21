@@ -4,7 +4,7 @@ import { frames } from "./frames";
 import { vercelURL } from "../utils";
 const frameHandler = frames(async (ctx) => {
   return {
-    image: (vercelURL() || "http://localhost:3000") + "/frame-cover.jpg",
+    image: (vercelURL() || "http://localhost:3000") + "/frame-cover.png",
     imageOptions: {
       aspectRatio: "1:1",
     },
@@ -19,24 +19,24 @@ const frameHandler = frames(async (ctx) => {
 
       <Button
         action="tx"
-        target="./weedies-mint/mint10/"
-        post_url="./weedies-mint/frames10/"
+        target="./weedies-mint/mint12/"
+        post_url="./weedies-mint/frames12/"
       >
-        Mint 10
+        Mint 12
       </Button>,
       <Button
         action="tx"
-        target="./weedies-mint/mint69/"
-        post_url="./weedies-mint/frames69/"
+        target="./weedies-mint/mint36/"
+        post_url="./weedies-mint/frames36/"
       >
-        Mint 69
+        Mint 36
       </Button>,
       <Button
         action="tx"
-        target="./weedies-mint/mint420/"
-        post_url="./weedies-mint/frames420/"
+        target="./weedies-mint/mint75/"
+        post_url="./weedies-mint/frames75/"
       >
-        Mint 420
+        Mint 75
       </Button>,
     ],
   };

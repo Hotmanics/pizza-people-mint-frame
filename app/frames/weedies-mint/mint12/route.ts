@@ -15,7 +15,7 @@ export async function POST(
     throw new Error("No frame message");
   }
 
-  let amountToMint = 420;
+  let amountToMint = 12;
 
   const mintPrice = Number(await getMintPrice()) * amountToMint;
 

@@ -23,7 +23,10 @@ export function getMintPageRoute(
       <Button action="link" target={`https://basescan.org/tx/${theHash}`}>
         View on block explorer
       </Button>,
-      <Button action="link" target={`https://opensea.io/collection/test-5606`}>
+      <Button
+        action="link"
+        target={`https://opensea.io/collection/pizza-people-1`}
+      >
         View on OpenSea
       </Button>,
     ],

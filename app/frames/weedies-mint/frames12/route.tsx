@@ -11,13 +11,13 @@ const handleRequest = frames(async (ctx) => {
   let result = await waitForTransaction(
     ctx,
     theHash,
-    `./weedies-mint/frames10/`
+    `./weedies-mint/frames12/`
   );
   if (result) return result as any;
 
   const jsons = await getNftMetadatas(
     Number(ctx.state.startMintCount) + 1,
-    Number(ctx.state.startMintCount) + 10,
+    Number(ctx.state.startMintCount) + 12,
     true
   );
 
