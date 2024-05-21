@@ -4,7 +4,7 @@ import { frames } from "./frames";
 import { vercelURL } from "../utils";
 const frameHandler = frames(async (ctx) => {
   return {
-    image: (vercelURL() || "http://localhost:3000") + "/frame-cover.png",
+    image: (vercelURL() || "http://localhost:3000") + "/frame-cover.gif",
     imageOptions: {
       aspectRatio: "1:1",
     },
